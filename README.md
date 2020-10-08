@@ -55,12 +55,11 @@ You can use either method for general JS OOP, but get used to seeing `props` in 
 The files in this repo are designed as modular classes that can be imported into a Node environment. `Animal` is the parent class, and child classes are contained in the `species` directory. Clone this repo and click around in VSCode -- look for at least one example of each concept mentioned above, and try to wrap your head around it.
 
 ### 2. Fire it up and play in the barnyard
-In your VSCode terminal, start Node and import some classes and instances from `index.js` and `script.js` -- we're going to build a sort of shell to plug our barnyard critters into.
+In your VSCode terminal, start Node by typing `node`, then let's import some classes and instances from `index.js` and `script.js` -- we're going to build a sort of shell to plug our barnyard critters into.
 
 ```bash
-node
-> const { Animal, Dog, Cat, Pig, Sheep, Chicken, Bull } = require('./index')
-> const { Monique, Spike, Leo, Lawrence, Laura, Sal, Perry, Tina, Pia, Tim, animals } = require('./script')
+const { Animal, Dog, Cat, Pig, Sheep, Chicken, Bull } = require('./index')
+const { Monique, Spike, Leo, Lawrence, Laura, Sal, Perry, Tina, Pia, Tim, animals } = require('./script')
 ```
 
 Now all of the above variables should be available to you in your Node shell. Type `animals` and you should see all of the current animals listed in an array. Type an animal's name and you should be able to access the individual object. Now do some stuff!
